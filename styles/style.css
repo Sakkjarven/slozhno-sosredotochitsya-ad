@@ -1,7 +1,15 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 @import "../fonts/fonts.css";
-.page {
+h2{
+  font-size: var(--page-text-font-size);
   font-family: var(--page-text-family);
+  font-weight: var(--page-text-font-weight);
+  line-height: var(--page-line-height);
+}
+.page {
+  font-size:var(--page-text-font-size);
+  font-family: var(--page-text-family);
+  font-weight: var(--page-text-font-weight);
   line-height: var(--page-line-height);
   background-color: var(--page-background-color);
   background-image: var(--page-background-image);
@@ -80,6 +88,8 @@
   justify-self: end;
 }
 .header__theme-menu-button {
+  width: 70px;
+  height: 26px;
   border: none;
   color: var(--header-color);
   font-size: var(--header-text-font-size);
@@ -110,6 +120,7 @@
 .main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  max-height: 5355px;
   grid-auto-flow: column;
   row-gap: 50px;
   margin-block: 40px;
@@ -121,7 +132,6 @@
   grid-column: 1 / 4;
   gap: 20px;
 }
-
 .section-card {
   display: grid;
   grid-template-rows: min-content auto;
@@ -140,6 +150,10 @@
   color: var(--section-header-text-color);
   background-color: var(--section-header-background);
 }
+.section-card-heading:not(:first-child){
+  margin-block-start: 10px;
+}
+
 .subheading {
   font-weight: 400;
 }
