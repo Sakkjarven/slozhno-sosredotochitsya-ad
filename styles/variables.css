@@ -1,7 +1,7 @@
 :root{
   --is-theme-dark: visible;
   --page-text-family: IBM Plex Mono, monospace;
-  --page-text-font-weight: 700;
+  --page-text-font-weight: 400;
   --page-text-font-size: 18px;
   --page-line-height: 23.4px;
   --page-background-image: url(../images/cover-image-dark.png);

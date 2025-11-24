@@ -6,7 +6,23 @@
   --header-color: #353430;
   --header-title-color: #DB00FF;
   --header-text-color:#353430;
-  --section-text-color:#F1B2CE; 
+  --section-header-text-color:#353430;
+  --section-text-color:#353430; 
   --section-title-color: var(--header-color);
   --section-header-text-color:var(--section-title-color);
+}
+@media (prefers-color-scheme: light) {
+  :root {
+  --is-theme-dark: hidden;
+  --page-background-image: url(../images/cover-image-light.png);
+  --page-background-color: #FFF1F7;
+  --accent-color:#FF8DCB;
+  --header-color: #353430;
+  --header-title-color: #DB00FF;
+  --header-text-color:#353430;
+  --section-header-text-color:#353430;
+  --section-text-color:#353430; 
+  --section-title-color: var(--header-color);
+  --section-header-text-color:var(--section-title-color);
+  }
 }
